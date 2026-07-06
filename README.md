@@ -105,16 +105,6 @@ We welcome contributors of all skill levels! This project is intentionally desig
 5. Test by opening `index.html` in your browser
 6. Submit a Pull Request
 
-### Issue Categories
-
-| Difficulty | Count | Examples |
-|---|---|---|
-| **Easy** | ~30 | Spelling fixes, spacing, hover effects, missing alt text, border radius consistency, favicon, grammar, button sizes, focus styles |
-| **Medium** | ~20 | Mobile responsiveness, CSS optimization, animations, accessibility, timeline layout, dark mode polish, form validation, navbar behavior |
-| **Hard** | ~10 | Client-side search, code refactoring, Lighthouse optimization, lazy loading, keyboard accessibility, reusable JS components, theme architecture, multilingual support |
-
-> **Note:** All issues are improvements only. The website must remain fully functional after every contribution.
-
 ### Good First Issues to Look For
 
 - Fix "recieve" → "receive" in the newsletter section (`index.html`)
@@ -144,3 +134,5 @@ This project is open source under the [MIT License](LICENSE).
 ---
 
 Built with passion for AI education. **Learn. Build. Contribute.**
+=======
+
