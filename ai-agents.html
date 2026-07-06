@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn AI Agents - autonomous systems that plan, reason, and execute tasks using LLMs and tools on AIVerse.">
+  <title>AI Agents - AIVerse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <div class="container">
+      <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="logo" aria-label="AIVerse Home"><i class="fas fa-brain" aria-hidden="true"></i><span>AIVerse</span></a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="ai-basics.html" class="nav-link">AI Basics</a></li>
+          <li><a href="machine-learning.html" class="nav-link">ML</a></li>
+          <li><a href="deep-learning.html" class="nav-link">Deep Learning</a></li>
+          <li><a href="prompt-engineering.html" class="nav-link">Prompts</a></li>
+          <li><a href="rag.html" class="nav-link">RAG</a></li>
+          <li><a href="ai-agents.html" class="nav-link">AI Agents</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon" aria-hidden="true"></i></button>
+          <button class="nav-toggle" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>AI Agents</span></nav>
+        <h1>AI <span class="text-gradient">Agents</span></h1>
+        <p>Build intelligent autonomous systems that perceive, plan, reason, and take action to accomplish complex goals.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="intro-text reveal">
+          <p>AI Agents are systems that use large language models as their reasoning engine, combined with tools, memory, and planning capabilities to autonomously complete multi-step tasks. They represent the next frontier in applied AI.</p>
+        </div>
+
+        <div class="content-grid reveal-stagger">
+          <article class="content-card">
+            <h3><i class="fas fa-clipboard-list" aria-hidden="true"></i> Planning &amp; Reasoning</h3>
+            <p>Agents break down complex goals into sub-tasks, create execution plans, and adapt when things don't go as expected. ReAct and Plan-and-Execute are popular patterns.</p>
+          </article>
+
+          <article class="content-card">
+            <h3><i class="fas fa-tools" aria-hidden="true"></i> Tool Use</h3>
+            <p>Agents interact with external tools — web search, code execution, APIs, databases, and file systems. The LLM decides which tool to use and interprets the results.</p>
+          </article>
+
+          <article class="content-card">
+            <h3><i class="fas fa-memory" aria-hidden="true"></i> Memory Systems</h3>
+            <p>Short-term memory holds conversation context. Long-term memory stores learned information across sessions using vector databases and structured storage.</p>
+          </article>
+
+          <article class="content-card">
+            <h3><i class="fas fa-users" aria-hidden="true"></i> Multi-Agent Systems</h3>
+            <p>Multiple specialized agents collaborate on complex workflows. One agent might research, another writes code, and a third reviews — like a virtual team.</p>
+          </article>
+        </div>
+
+        <div class="key-points reveal">
+          <h3>Popular Agent Frameworks</h3>
+          <ul>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> LangChain Agents — flexible tool-calling and chain orchestration</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> AutoGPT — autonomous goal-driven task execution</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> CrewAI — multi-agent collaboration framework</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Microsoft AutoGen — conversational multi-agent systems</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> OpenAI Assistants API — built-in tool use and memory</li>
+          </ul>
+        </div>
+
+        <div class="code-example reveal">
+          <span class="comment"># Simple agent with tool use (conceptual)</span><br>
+          tools = [web_search, calculator, code_executor]<br>
+          agent = Agent(<br>
+          &nbsp;&nbsp;llm=ChatOpenAI(model=<span class="string">"gpt-4"</span>),<br>
+          &nbsp;&nbsp;tools=tools,<br>
+          &nbsp;&nbsp;system_prompt=<span class="string">"You are a helpful research assistant."</span><br>
+          )<br>
+          result = agent.run(<span class="string">"Research the latest trends in AI agents"</span>)
+        </div>
+
+        <div class="summary-box reveal">
+          <h2>Summary</h2>
+          <p>AI Agents represent the cutting edge of applied artificial intelligence. By combining LLMs with tools, memory, and planning, you can build systems that automate complex workflows. Explore our <a href="resources.html">Resources</a> page for tools and libraries to start building your own agents today.</p>
+          <a href="resources.html" class="btn btn-primary" style="margin-top: 1rem;">Explore Resources <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="logo"><i class="fas fa-brain" aria-hidden="true"></i><span>AIVerse</span></a><p>Learn AI from Zero to Hero.</p></div>
+        <div class="footer-links"><h4>Learn</h4><ul><li><a href="ai-basics.html">AI Basics</a></li><li><a href="ai-agents.html">AI Agents</a></li></ul></div>
+        <div class="footer-links"><h4>Advanced</h4><ul><li><a href="rag.html">RAG</a></li><li><a href="resources.html">Resources</a></li></ul></div>
+        <div class="footer-links"><h4>Community</h4><ul><li><a href="contact.html">Contact</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 AIVerse. Open Source under MIT License.</p></div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
+  <script src="js/darkmode.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

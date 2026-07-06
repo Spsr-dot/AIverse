@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn Machine Learning fundamentals - algorithms, training, evaluation, and practical applications on AIVerse.">
+  <title>Machine Learning - AIVerse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <div class="container">
+      <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="logo" aria-label="AIVerse Home"><i class="fas fa-brain" aria-hidden="true"></i><span>AIVerse</span></a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="ai-basics.html" class="nav-link">AI Basics</a></li>
+          <li><a href="machine-learning.html" class="nav-link">ML</a></li>
+          <li><a href="deep-learning.html" class="nav-link">Deep Learning</a></li>
+          <li><a href="prompt-engineering.html" class="nav-link">Prompts</a></li>
+          <li><a href="rag.html" class="nav-link">RAG</a></li>
+          <li><a href="ai-agents.html" class="nav-link">AI Agents</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon" aria-hidden="true"></i></button>
+          <button class="nav-toggle" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Machine Learning</span></nav>
+        <h1>Machine <span class="text-gradient">Learning</span></h1>
+        <p>Discover how machines learn from data to make predictions, classify information, and uncover hidden patterns.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="intro-text reveal">
+          <p>Machine Learning (ML) is a subset of AI that enables systems to automatically learn and improve from experience without being explicitly programmed. It's the engine behind most modern AI applications.</p>
+        </div>
+
+        <div class="content-grid reveal-stagger">
+          <article class="content-card">
+            <h3><i class="fas fa-graduation-cap" aria-hidden="true"></i> Supervised Learning</h3>
+            <p>Models learn from labeled data to predict outcomes. Examples include email spam detection, house price prediction, and image classification using algorithms like Linear Regression, Decision Trees, and SVM.</p>
+          </article>
+
+          <article class="content-card">
+            <h3><i class="fas fa-search" aria-hidden="true"></i> Unsupervised Learning</h3>
+            <p>Algorithms find hidden patterns in unlabeled data. Common techniques include K-Means clustering for customer segmentation, PCA for dimensionality reduction, and anomaly detection.</p>
+          </article>
+
+          <article class="content-card">
+            <h3><i class="fas fa-gamepad" aria-hidden="true"></i> Reinforcement Learning</h3>
+            <p>Agents learn by interacting with an environment and receiving rewards or penalties. Used in game playing (AlphaGo), robotics, and autonomous navigation systems.</p>
+          </article>
+
+          <article class="content-card">
+            <h3><i class="fas fa-balance-scale" aria-hidden="true"></i> Model Evaluation</h3>
+            <p>Measure model performance using metrics like accuracy, precision, recall, F1-score, and ROC-AUC. Cross-validation and train/test splits prevent overfitting.</p>
+          </article>
+        </div>
+
+        <div class="key-points reveal">
+          <h3>Essential ML Workflow</h3>
+          <ul>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Data collection and preprocessing (cleaning, normalization)</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Feature engineering and selection</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Model selection and hyperparameter tuning</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Training, validation, and testing</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Deployment and monitoring in production</li>
+          </ul>
+        </div>
+
+        <div class="code-example reveal">
+          <span class="comment"># Train a simple classifier with scikit-learn</span><br>
+          <span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split<br>
+          <span class="keyword">from</span> sklearn.ensemble <span class="keyword">import</span> RandomForestClassifier<br>
+          <span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> accuracy_score<br><br>
+          X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)<br>
+          model = RandomForestClassifier(n_estimators=100)<br>
+          model.fit(X_train, y_train)<br>
+          predictions = model.predict(X_test)<br>
+          <span class="keyword">print</span>(<span class="string">f"Accuracy: {accuracy_score(y_test, predictions):.2f}"</span>)
+        </div>
+
+        <div class="summary-box reveal">
+          <h2>Summary</h2>
+          <p>Machine Learning is the practical core of modern AI. You now understand the three main learning paradigms, evaluation techniques, and the end-to-end ML workflow. Ready to go deeper? Explore <a href="deep-learning.html">Deep Learning</a> to learn about neural networks and their incredible capabilities.</p>
+          <a href="deep-learning.html" class="btn btn-primary" style="margin-top: 1rem;">Next: Deep Learning <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="logo"><i class="fas fa-brain" aria-hidden="true"></i><span>AIVerse</span></a><p>Learn AI from Zero to Hero.</p>
+          <div class="social-links"><a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a></div></div>
+        <div class="footer-links"><h4>Learn</h4><ul><li><a href="ai-basics.html">AI Basics</a></li><li><a href="machine-learning.html">Machine Learning</a></li><li><a href="deep-learning.html">Deep Learning</a></li></ul></div>
+        <div class="footer-links"><h4>Advanced</h4><ul><li><a href="rag.html">RAG</a></li><li><a href="ai-agents.html">AI Agents</a></li></ul></div>
+        <div class="footer-links"><h4>Community</h4><ul><li><a href="contact.html">Contact</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 AIVerse. Open Source under MIT License.</p></div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
+  <script src="js/darkmode.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

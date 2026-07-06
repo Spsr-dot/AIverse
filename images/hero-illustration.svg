@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 400" role="img" aria-label="Artificial Intelligence illustration with neural network and brain">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#eff6ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0e7ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="240" cy="200" r="180" fill="url(#grad2)" opacity="0.6"/>
+  <!-- Neural network nodes -->
+  <circle cx="120" cy="120" r="12" fill="url(#grad1)" opacity="0.9"/>
+  <circle cx="200" cy="80" r="14" fill="url(#grad1)" opacity="0.9"/>
+  <circle cx="280" cy="100" r="12" fill="url(#grad1)" opacity="0.9"/>
+  <circle cx="360" cy="130" r="10" fill="url(#grad1)" opacity="0.9"/>
+  <circle cx="100" cy="200" r="14" fill="url(#grad1)" opacity="0.9"/>
+  <circle cx="180" cy="180" r="16" fill="url(#grad1)"/>
+  <circle cx="260" cy="190" r="14" fill="url(#grad1)" opacity="0.9"/>
+  <circle cx="340" cy="210" r="12" fill="url(#grad1)" opacity="0.9"/>
+  <circle cx="140" cy="280" r="12" fill="url(#grad1)" opacity="0.9"/>
+  <circle cx="220" cy="300" r="14" fill="url(#grad1)" opacity="0.9"/>
+  <circle cx="300" cy="270" r="12" fill="url(#grad1)" opacity="0.9"/>
+  <circle cx="380" cy="290" r="10" fill="url(#grad1)" opacity="0.9"/>
+  <!-- Connection lines -->
+  <line x1="120" y1="120" x2="180" y2="180" stroke="#2563eb" stroke-width="1.5" opacity="0.3"/>
+  <line x1="200" y1="80" x2="180" y2="180" stroke="#2563eb" stroke-width="1.5" opacity="0.3"/>
+  <line x1="280" y1="100" x2="260" y2="190" stroke="#6366f1" stroke-width="1.5" opacity="0.3"/>
+  <line x1="360" y1="130" x2="340" y2="210" stroke="#6366f1" stroke-width="1.5" opacity="0.3"/>
+  <line x1="100" y1="200" x2="180" y2="180" stroke="#2563eb" stroke-width="1.5" opacity="0.3"/>
+  <line x1="180" y1="180" x2="260" y2="190" stroke="#0ea5e9" stroke-width="2" opacity="0.4"/>
+  <line x1="260" y1="190" x2="340" y2="210" stroke="#6366f1" stroke-width="1.5" opacity="0.3"/>
+  <line x1="140" y1="280" x2="220" y2="300" stroke="#2563eb" stroke-width="1.5" opacity="0.3"/>
+  <line x1="220" y1="300" x2="300" y2="270" stroke="#6366f1" stroke-width="1.5" opacity="0.3"/>
+  <line x1="180" y1="180" x2="220" y2="300" stroke="#0ea5e9" stroke-width="1.5" opacity="0.3"/>
+  <line x1="260" y1="190" x2="220" y2="300" stroke="#0ea5e9" stroke-width="1.5" opacity="0.3"/>
+  <!-- Brain outline -->
+  <path d="M200 140 Q160 130 150 170 Q140 210 170 230 Q190 250 220 240 Q250 250 270 230 Q300 210 290 170 Q280 130 240 140 Q220 135 200 140Z" fill="none" stroke="url(#grad1)" stroke-width="3" opacity="0.6"/>
+  <!-- AI text -->
+  <text x="240" y="360" text-anchor="middle" font-family="Poppins, sans-serif" font-size="28" font-weight="700" fill="url(#grad1)">AI</text>
+</svg>

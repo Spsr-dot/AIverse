@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn AI Basics - Understand artificial intelligence fundamentals, history, types, and applications on AIVerse.">
+  <title>AI Basics - AIVerse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <div class="container">
+      <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="logo" aria-label="AIVerse Home">
+          <i class="fas fa-brain" aria-hidden="true"></i>
+          <span>AIVerse</span>
+        </a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="ai-basics.html" class="nav-link">AI Basics</a></li>
+          <li><a href="machine-learning.html" class="nav-link">ML</a></li>
+          <li><a href="deep-learning.html" class="nav-link">Deep Learning</a></li>
+          <li><a href="prompt-engineering.html" class="nav-link">Prompts</a></li>
+          <li><a href="rag.html" class="nav-link">RAG</a></li>
+          <li><a href="ai-agents.html" class="nav-link">AI Agents</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon" aria-hidden="true"></i></button>
+          <button class="nav-toggle" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a> <span>/</span> <span>AI Basics</span>
+        </nav>
+        <h1>AI <span class="text-gradient">Basics</span></h1>
+        <p>Build a solid foundation in Artificial Intelligence — understand what AI is, how it works, and where it's headed.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="intro-text reveal">
+          <p>Artificial Intelligence (AI) is the simulation of human intelligence in machines programmed to think, learn, and solve problems. From voice assistants to self-driving cars, AI is transforming every aspect of our lives.</p>
+        </div>
+
+        <div class="content-grid reveal-stagger">
+          <article class="content-card">
+            <h3><i class="fas fa-history" aria-hidden="true"></i> History of AI</h3>
+            <p>AI research began in the 1950s when Alan Turing proposed the Turing Test. Key milestones include the Dartmouth Conference (1956), expert systems in the 1980s, and the deep learning revolution starting in 2012.</p>
+          </article>
+
+          <article class="content-card">
+            <h3><i class="fas fa-sitemap" aria-hidden="true"></i> Types of AI</h3>
+            <p>AI is categorized into Narrow AI (task-specific), General AI (human-level intelligence), and Super AI (beyond human capability). Today, all practical AI systems are Narrow AI.</p>
+          </article>
+
+          <article class="content-card">
+            <h3><i class="fas fa-cogs" aria-hidden="true"></i> How AI Works</h3>
+            <p>AI systems learn patterns from data using algorithms. They process inputs, identify features, make predictions, and improve over time through feedback loops and training.</p>
+          </article>
+
+          <article class="content-card">
+            <h3><i class="fas fa-industry" aria-hidden="true"></i> Real-World Applications</h3>
+            <p>AI powers recommendation systems (Netflix, Spotify), medical diagnosis, fraud detection, autonomous vehicles, language translation, and intelligent chatbots.</p>
+          </article>
+        </div>
+
+        <div class="key-points reveal">
+          <h3>Key Concepts to Know</h3>
+          <ul>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> AI vs Machine Learning vs Deep Learning — understanding the hierarchy</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Training data, models, and inference — the core workflow</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Supervised vs unsupervised learning approaches</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Ethical considerations: bias, privacy, and responsible AI</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> The role of Python and open-source tools in AI development</li>
+          </ul>
+        </div>
+
+        <div class="code-example reveal">
+          <span class="comment"># Simple AI concept: A rule-based chatbot in Python</span><br>
+          <span class="keyword">def</span> chatbot_response(user_input):<br>
+          &nbsp;&nbsp;responses = {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"hello"</span>: <span class="string">"Hi! I'm an AI assistant."</span>,<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"what is ai"</span>: <span class="string">"AI is the simulation of human intelligence in machines."</span>,<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"bye"</span>: <span class="string">"Goodbye! Keep learning!"</span><br>
+          &nbsp;&nbsp;}<br>
+          &nbsp;&nbsp;<span class="keyword">return</span> responses.get(user_input.lower(), <span class="string">"I'm still learning. Try asking about AI!"</span>)
+        </div>
+
+        <div class="summary-box reveal">
+          <h2>Summary</h2>
+          <p>AI Basics is your starting point for understanding the world of artificial intelligence. You've learned about AI's history, types, how it works, and its real-world impact. Next, explore <a href="machine-learning.html">Machine Learning</a> to understand how machines actually learn from data, or check out our <a href="resources.html">Resources</a> page for recommended learning materials.</p>
+          <a href="machine-learning.html" class="btn btn-primary" style="margin-top: 1rem;">
+            Next: Machine Learning <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><i class="fas fa-brain" aria-hidden="true"></i><span>AIVerse</span></a>
+          <p>Learn Artificial Intelligence from Zero to Hero.</p>
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer-links"><h4>Learn</h4><ul><li><a href="ai-basics.html">AI Basics</a></li><li><a href="machine-learning.html">Machine Learning</a></li><li><a href="deep-learning.html">Deep Learning</a></li></ul></div>
+        <div class="footer-links"><h4>Advanced</h4><ul><li><a href="rag.html">RAG</a></li><li><a href="ai-agents.html">AI Agents</a></li><li><a href="resources.html">Resources</a></li></ul></div>
+        <div class="footer-links"><h4>Community</h4><ul><li><a href="contact.html">Contact</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 AIVerse. Open Source under MIT License.</p></div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
+  <script src="js/darkmode.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

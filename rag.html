@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn RAG - Retrieval-Augmented Generation for building grounded AI systems with external knowledge on AIVerse.">
+  <title>RAG - AIVerse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <div class="container">
+      <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="logo" aria-label="AIVerse Home"><i class="fas fa-brain" aria-hidden="true"></i><span>AIVerse</span></a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="ai-basics.html" class="nav-link">AI Basics</a></li>
+          <li><a href="machine-learning.html" class="nav-link">ML</a></li>
+          <li><a href="deep-learning.html" class="nav-link">Deep Learning</a></li>
+          <li><a href="prompt-engineering.html" class="nav-link">Prompts</a></li>
+          <li><a href="rag.html" class="nav-link">RAG</a></li>
+          <li><a href="ai-agents.html" class="nav-link">AI Agents</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon" aria-hidden="true"></i></button>
+          <button class="nav-toggle" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>RAG</span></nav>
+        <h1>Retrieval-Augmented <span class="text-gradient">Generation</span></h1>
+        <p>Combine the power of information retrieval with generative AI to build accurate, knowledge-grounded systems.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="intro-text reveal">
+          <p>RAG (Retrieval-Augmented Generation) enhances LLM responses by retrieving relevant documents from an external knowledge base before generating answers. This reduces hallucinations and keeps AI responses grounded in factual data.</p>
+        </div>
+
+        <div class="content-grid reveal-stagger">
+          <article class="content-card">
+            <h3><i class="fas fa-file-alt" aria-hidden="true"></i> Document Processing</h3>
+            <p>Load documents (PDFs, web pages, databases), split them into chunks, and prepare them for embedding. Tools like LangChain and LlamaIndex simplify this pipeline.</p>
+          </article>
+
+          <article class="content-card">
+            <h3><i class="fas fa-vector-square" aria-hidden="true"></i> Embeddings &amp; Vector Stores</h3>
+            <p>Convert text chunks into numerical vectors using embedding models. Store them in vector databases like Pinecone, Chroma, Weaviate, or FAISS for fast similarity search.</p>
+          </article>
+
+          <article class="content-card">
+            <h3><i class="fas fa-search-plus" aria-hidden="true"></i> Retrieval</h3>
+            <p>When a user asks a question, convert it to an embedding and find the most semantically similar document chunks from the vector store.</p>
+          </article>
+
+          <article class="content-card">
+            <h3><i class="fas fa-magic" aria-hidden="true"></i> Generation</h3>
+            <p>Feed the retrieved context along with the user's question to an LLM. The model generates an answer grounded in the provided documents, not just its training data.</p>
+          </article>
+        </div>
+
+        <div class="key-points reveal">
+          <h3>RAG Pipeline Steps</h3>
+          <ul>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Ingest and chunk your knowledge base documents</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Generate embeddings and store in a vector database</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Retrieve relevant chunks for each user query</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Augment the prompt with retrieved context</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Generate and return the grounded response</li>
+          </ul>
+        </div>
+
+        <div class="code-example reveal">
+          <span class="comment"># Simplified RAG flow with LangChain</span><br>
+          <span class="keyword">from</span> langchain.vectorstores <span class="keyword">import</span> Chroma<br>
+          <span class="keyword">from</span> langchain.embeddings <span class="keyword">import</span> OpenAIEmbeddings<br>
+          <span class="keyword">from</span> langchain.chains <span class="keyword">import</span> RetrievalQA<br><br>
+          vectorstore = Chroma.from_documents(docs, OpenAIEmbeddings())<br>
+          qa_chain = RetrievalQA.from_chain_type(<br>
+          &nbsp;&nbsp;llm=llm, retriever=vectorstore.as_retriever()<br>
+          )<br>
+          answer = qa_chain.run(<span class="string">"What is our refund policy?"</span>)
+        </div>
+
+        <div class="summary-box reveal">
+          <h2>Summary</h2>
+          <p>RAG is essential for building production AI applications that need accurate, up-to-date information. It bridges the gap between static LLM knowledge and dynamic data sources. Continue to <a href="ai-agents.html">AI Agents</a> to learn how to build autonomous systems that can plan and execute complex tasks.</p>
+          <a href="ai-agents.html" class="btn btn-primary" style="margin-top: 1rem;">Next: AI Agents <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="logo"><i class="fas fa-brain" aria-hidden="true"></i><span>AIVerse</span></a><p>Learn AI from Zero to Hero.</p></div>
+        <div class="footer-links"><h4>Learn</h4><ul><li><a href="ai-basics.html">AI Basics</a></li><li><a href="rag.html">RAG</a></li></ul></div>
+        <div class="footer-links"><h4>Advanced</h4><ul><li><a href="ai-agents.html">AI Agents</a></li><li><a href="resources.html">Resources</a></li></ul></div>
+        <div class="footer-links"><h4>Community</h4><ul><li><a href="contact.html">Contact</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 AIVerse. Open Source under MIT License.</p></div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
+  <script src="js/darkmode.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

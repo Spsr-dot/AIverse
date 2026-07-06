@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn Prompt Engineering - craft effective prompts for LLMs, techniques, and best practices on AIVerse.">
+  <title>Prompt Engineering - AIVerse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <div class="container">
+      <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="logo" aria-label="AIVerse Home"><i class="fas fa-brain" aria-hidden="true"></i><span>AIVerse</span></a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="ai-basics.html" class="nav-link">AI Basics</a></li>
+          <li><a href="machine-learning.html" class="nav-link">ML</a></li>
+          <li><a href="deep-learning.html" class="nav-link">Deep Learning</a></li>
+          <li><a href="prompt-engineering.html" class="nav-link">Prompts</a></li>
+          <li><a href="rag.html" class="nav-link">RAG</a></li>
+          <li><a href="ai-agents.html" class="nav-link">AI Agents</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon" aria-hidden="true"></i></button>
+          <button class="nav-toggle" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Prompt Engineering</span></nav>
+        <h1>Prompt <span class="text-gradient">Engineering</span></h1>
+        <p>Learn to communicate effectively with AI models and get precise, high-quality outputs every time.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="intro-text reveal">
+          <p>Prompt Engineering is the art and science of designing inputs that guide large language models (LLMs) to produce desired outputs. It's one of the most valuable skills in the age of generative AI.</p>
+        </div>
+
+        <div class="content-grid reveal-stagger">
+          <article class="content-card">
+            <h3><i class="fas fa-pen-fancy" aria-hidden="true"></i> Zero-Shot Prompting</h3>
+            <p>Ask the model to perform a task without any examples. Works well for straightforward requests like summarization, translation, or question answering.</p>
+          </article>
+
+          <article class="content-card">
+            <h3><i class="fas fa-copy" aria-hidden="true"></i> Few-Shot Prompting</h3>
+            <p>Provide a few examples of input-output pairs before your actual request. This helps the model understand the pattern and format you expect.</p>
+          </article>
+
+          <article class="content-card">
+            <h3><i class="fas fa-brain" aria-hidden="true"></i> Chain-of-Thought</h3>
+            <p>Encourage the model to reason step by step before giving a final answer. Dramatically improves performance on math, logic, and complex reasoning tasks.</p>
+          </article>
+
+          <article class="content-card">
+            <h3><i class="fas fa-user-tie" aria-hidden="true"></i> Role Prompting</h3>
+            <p>Assign a persona or expertise to the model: "You are an expert Python developer..." This shapes tone, depth, and perspective of responses.</p>
+          </article>
+        </div>
+
+        <div class="key-points reveal">
+          <h3>Prompt Engineering Best Practices</h3>
+          <ul>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Be specific and clear about what you want</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Provide context and constraints (format, length, tone)</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Use delimiters to separate sections of your prompt</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Iterate and refine prompts based on outputs</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Test prompts across different models and temperatures</li>
+          </ul>
+        </div>
+
+        <div class="code-example reveal">
+          <span class="comment"># Example: Chain-of-Thought prompt</span><br>
+          prompt = <span class="string">"""</span><br>
+          <span class="string">Solve this step by step:</span><br>
+          <span class="string">A store has 45 apples. They sell 60% in the morning</span><br>
+          <span class="string">and receive a delivery of 30 more. How many apples</span><br>
+          <span class="string">are left at the end of the day?</span><br><br>
+          <span class="string">Think through each step before giving the final answer.</span><br>
+          <span class="string">"""</span>
+        </div>
+
+        <div class="summary-box reveal">
+          <h2>Summary</h2>
+          <p>Prompt Engineering bridges human intent and AI capability. Master these techniques to get reliable, high-quality outputs from any LLM. Next, learn <a href="rag.html">RAG (Retrieval-Augmented Generation)</a> to combine prompts with external knowledge for even more powerful AI applications.</p>
+          <a href="rag.html" class="btn btn-primary" style="margin-top: 1rem;">Next: RAG <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="logo"><i class="fas fa-brain" aria-hidden="true"></i><span>AIVerse</span></a><p>Learn AI from Zero to Hero.</p></div>
+        <div class="footer-links"><h4>Learn</h4><ul><li><a href="ai-basics.html">AI Basics</a></li><li><a href="prompt-engineering.html">Prompt Engineering</a></li></ul></div>
+        <div class="footer-links"><h4>Advanced</h4><ul><li><a href="rag.html">RAG</a></li><li><a href="ai-agents.html">AI Agents</a></li></ul></div>
+        <div class="footer-links"><h4>Community</h4><ul><li><a href="contact.html">Contact</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 AIVerse. Open Source under MIT License.</p></div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
+  <script src="js/darkmode.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

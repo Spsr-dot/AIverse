@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AIVerse - Learn Artificial Intelligence from Zero to Hero. Free open-source educational platform for AI, Machine Learning, Deep Learning, and more.">
+  <title>AIVerse - Learn Artificial Intelligence from Zero to Hero</title>
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- ========== HEADER & NAVIGATION ========== -->
+  <header class="header" role="banner">
+    <div class="container">
+      <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="logo" aria-label="AIVerse Home">
+          <i class="fas fa-brain" aria-hidden="true"></i>
+          <span>AIVerse</span>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="ai-basics.html" class="nav-link">AI Basics</a></li>
+          <li><a href="machine-learning.html" class="nav-link">ML</a></li>
+          <li><a href="deep-learning.html" class="nav-link">Deep Learning</a></li>
+          <li><a href="prompt-engineering.html" class="nav-link">Prompts</a></li>
+          <li><a href="rag.html" class="nav-link">RAG</a></li>
+          <li><a href="ai-agents.html" class="nav-link">AI Agents</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </button>
+          <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Learn <span class="text-gradient-animated">Artificial Intelligence</span> from Zero to Hero</h1>
+            <p>AIVerse is your free, open-source gateway to mastering AI. From foundational concepts to cutting-edge techniques like RAG and AI Agents — start your journey today with structured roadmaps and hands-on learning.</p>
+            <div class="hero-buttons">
+              <a href="ai-basics.html" class="btn btn-primary btn-lg">
+                <i class="fas fa-rocket" aria-hidden="true"></i> Start Learning
+              </a>
+              <a href="#topics" class="btn btn-secondary btn-secondary-hero">
+                <i class="fas fa-compass" aria-hidden="true"></i> Explore Topics
+              </a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="images/hero-illustration.svg" alt="Neural network and AI brain illustration" class="hero-illustration" width="480" height="400">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FEATURES SECTION ========== -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Why Choose <span class="text-gradient">AIVerse</span>?</h2>
+          <p>Everything you need to go from a complete beginner to a confident AI practitioner — all in one place.</p>
+        </div>
+
+        <div class="features-grid reveal-stagger">
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fas fa-seedling" aria-hidden="true"></i></div>
+            <h3>Beginner Friendly</h3>
+            <p>No prior experience needed. We break down complex AI concepts into simple, digestible lessons that any beginer can follow.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fas fa-laptop-code" aria-hidden="true"></i></div>
+            <h3>Project Based</h3>
+            <p>Learn by building real-world projects. Apply your knowledge through hands-on exercises and practical implementations.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fab fa-github" aria-hidden="true"></i></div>
+            <h3>Open Source</h3>
+            <p>Built by the community, for the community. Contribute, learn Git, and grow your open-source portfolio along the way.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fas fa-gamepad" aria-hidden="true"></i></div>
+            <h3>Interactive Learning</h3>
+            <p>Engage with code examples, visual diagrams, and step-by-step tutorials designed to make learning AI fun and effective.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fas fa-map-signs" aria-hidden="true"></i></div>
+            <h3>Roadmaps</h3>
+            <p>Follow structured learning paths that guide you from AI fundamentals all the way to deploying production-ready models.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fas fa-book-open" aria-hidden="true"></i></div>
+            <h3>Resources</h3>
+            <p>Access curated books, courses, tools, and datasets — handpicked to accelerate your AI learning journey.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== LEARNING ROADMAP ========== -->
+    <section class="section section-alt" id="roadmap">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Your <span class="text-gradient">Learning Roadmap</span></h2>
+          <p>Follow this step-by-step path to master Artificial Intelligence from the ground up.</p>
+        </div>
+
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>AI Basics</h3>
+              <p>Understand what AI is, its history, types, and real-world applications.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Python</h3>
+              <p>Learn the programming language that powers modern AI development.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Machine Learning</h3>
+              <p>Master supervised, unsupervised, and reinforcement learning algorithms.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Deep Learning</h3>
+              <p>Build neural networks with TensorFlow and PyTorch for complex tasks.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>NLP</h3>
+              <p>Process and understand human language using natural language processing.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>LLMs</h3>
+              <p>Explore large language models like GPT, Claude, and Llama.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Prompt Engineering</h3>
+              <p>Craft effective prompts to get the best results from AI models.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Vector Databases</h3>
+              <p>Store and retrieve embeddings for semantic search and RAG systems.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>RAG</h3>
+              <p>Build retrieval-augmented generation pipelines for grounded AI responses.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>AI Agents</h3>
+              <p>Create autonomous agents that plan, reason, and execute tasks.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Deployment</h3>
+              <p>Deploy AI models to production with APIs, containers, and cloud services.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== POPULAR TOPICS ========== -->
+    <section class="section" id="topics">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Popular <span class="text-gradient">Topics</span></h2>
+          <p>Explore our most popular learning paths and dive deep into the world of AI.</p>
+        </div>
+
+        <div class="topics-grid reveal-stagger">
+          <a href="ai-basics.html" class="topic-card">
+            <div class="topic-icon"><i class="fas fa-robot" aria-hidden="true"></i></div>
+            <div>
+              <h3>Artificial Intelligence</h3>
+              <p>Foundations of AI, history, and core concepts every practitioner should know.</p>
+            </div>
+          </a>
+
+          <a href="machine-learning.html" class="topic-card">
+            <div class="topic-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+            <div>
+              <h3>Machine Learning</h3>
+              <p>Algorithms that learn from data to make predictions and decisions.</p>
+            </div>
+          </a>
+
+          <a href="deep-learning.html" class="topic-card">
+            <div class="topic-icon"><i class="fas fa-network-wired" aria-hidden="true"></i></div>
+            <div>
+              <h3>Deep Learning</h3>
+              <p>Neural networks with multiple layers for complex pattern recognition.</p>
+            </div>
+          </a>
+
+          <a href="deep-learning.html" class="topic-card">
+            <div class="topic-icon"><i class="fas fa-eye" aria-hidden="true"></i></div>
+            <div>
+              <h3>Computer Vision</h3>
+              <p>Teach machines to see and interpret images and video content.</p>
+            </div>
+          </a>
+
+          <a href="deep-learning.html" class="topic-card">
+            <div class="topic-icon"><i class="fas fa-language" aria-hidden="true"></i></div>
+            <div>
+              <h3>Natural Language Processing</h3>
+              <p>Enable computers to understand, interpret, and generate human language.</p>
+            </div>
+          </a>
+
+          <a href="prompt-engineering.html" class="topic-card">
+            <div class="topic-icon"><i class="fas fa-comment-dots" aria-hidden="true"></i></div>
+            <div>
+              <h3>Prompt Engineering</h3>
+              <p>Design effective prompts to unlock the full potential of LLMs.</p>
+            </div>
+          </a>
+
+          <a href="rag.html" class="topic-card">
+            <div class="topic-icon"><i class="fas fa-database" aria-hidden="true"></i></div>
+            <div>
+              <h3>RAG</h3>
+              <p>Combine retrieval systems with generative AI for accurate answers.</p>
+            </div>
+          </a>
+
+          <a href="ai-agents.html" class="topic-card">
+            <div class="topic-icon"><i class="fas fa-user-astronaut" aria-hidden="true"></i></div>
+            <div>
+              <h3>AI Agents</h3>
+              <p>Build autonomous systems that plan, act, and solve complex problems.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== WHY LEARN AI ========== -->
+    <section class="section section-alt" id="why-ai">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Why Learn <span class="text-gradient">AI</span>?</h2>
+          <p>Artifical Intelligence is reshaping every industry. Here's why now is the perfect time to start.</p>
+        </div>
+
+        <div class="why-grid reveal-stagger">
+          <article class="why-card">
+            <i class="fas fa-briefcase" aria-hidden="true"></i>
+            <h3>High Demand Careers</h3>
+            <p>AI professionals are among the most sought-after in tech, with competitive salaries and abundant job opportunities worldwide.</p>
+          </article>
+
+          <article class="why-card">
+            <i class="fas fa-lightbulb" aria-hidden="true"></i>
+            <h3>Solve Real Problems</h3>
+            <p>From healthcare diagnostics to climate modeling, AI empowers you to tackle humanity's greatest challenges.</p>
+          </article>
+
+          <article class="why-card">
+            <i class="fas fa-globe" aria-hidden="true"></i>
+            <h3>Shape the Future</h3>
+            <p>Be part of the technological revolution that's transforming how we live, work, and interact with the world.</p>
+          </article>
+
+          <article class="why-card">
+            <i class="fas fa-unlock" aria-hidden="true"></i>
+            <h3>Accessible to Everyone</h3>
+            <p>With free tools, open-source libraries, and platforms like AIVerse, anyone can start learning AI today.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>What Learners <span class="text-gradient">Say</span></h2>
+          <p>Hear from students who transformed their careers through AI learning.</p>
+        </div>
+
+        <div class="testimonials-grid reveal-stagger">
+          <article class="testimonial-card">
+            <p class="testimonial-text">AIVerse made AI approachable for me as a complete beginner. The roadmaps and project-based approach helped me land my first ML internship within six months.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">PS</div>
+              <div class="author-info">
+                <h4>Priya Sharma</h4>
+                <span>ML Engineer, Bangalore</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-text">As a software developer transitioning to AI, the structured content on RAG and AI Agents was exactly what I needed. The open-source community is incredibly supportive.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">MR</div>
+              <div class="author-info">
+                <h4>Michael Rodriguez</h4>
+                <span>AI Developer, San Francisco</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-text">I contributed my first open-source PR through AIVerse's GitHub issues. It's the perfect platform for students who want to learn both AI and collaborative development.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AK</div>
+              <div class="author-info">
+                <h4>Aisha Khan</h4>
+                <span>CS Student, London</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== NEWSLETTER ========== -->
+    <section class="section section-alt" id="newsletter">
+      <div class="container">
+        <div class="newsletter reveal">
+          <h2>Stay Updated</h2>
+          <p>Subscribe to recieve the latest AI tutorials, roadmaps, and open-source contribution opportunities.</p>
+          <form class="newsletter-form" aria-label="Newsletter subscription">
+            <input type="email" placeholder="Enter your email address" required aria-label="Email address">
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <i class="fas fa-brain" aria-hidden="true"></i>
+            <span>AIVerse</span>
+          </a>
+          <p>Learn Artificial Intelligence from Zero to Hero. Free, open-source, and built for everyone.</p>
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://discord.com" target="_blank" rel="noopener noreferrer" aria-label="Discord"><i class="fab fa-discord"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Learn</h4>
+          <ul>
+            <li><a href="ai-basics.html">AI Basics</a></li>
+            <li><a href="machine-learning.html">Machine Learning</a></li>
+            <li><a href="deep-learning.html">Deep Learning</a></li>
+            <li><a href="prompt-engineering.html">Prompt Engineering</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Advanced</h4>
+          <ul>
+            <li><a href="rag.html">RAG</a></li>
+            <li><a href="ai-agents.html">AI Agents</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">Contribute</a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">Report a Bug</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AIVerse. Open Source under MIT License. Built with passion for AI education.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/darkmode.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
