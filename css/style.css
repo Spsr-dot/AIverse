@@ -1154,3 +1154,8 @@ p {
 .intro-text p {
   font-size: var(--font-size-lg);
 }
+
+.code-example code {
+  display: block;
+  font: inherit;
+}

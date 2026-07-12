@@ -91,16 +91,14 @@
           </ul>
         </div>
 
-        <div class="code-example reveal">
-          <span class="comment"># Simple agent with tool use (conceptual)</span><br>
-          tools = [web_search, calculator, code_executor]<br>
-          agent = Agent(<br>
-          &nbsp;&nbsp;llm=ChatOpenAI(model=<span class="string">"gpt-4"</span>),<br>
-          &nbsp;&nbsp;tools=tools,<br>
-          &nbsp;&nbsp;system_prompt=<span class="string">"You are a helpful research assistant."</span><br>
-          )<br>
-          result = agent.run(<span class="string">"Research the latest trends in AI agents"</span>)
-        </div>
+      <pre class="code-example reveal"><code><span class="comment"># Simple agent with tool use (conceptual)</span>
+tools = [web_search, calculator, code_executor]
+agent = Agent(
+  llm=ChatOpenAI(model=<span class="string">"gpt-4"</span>),
+  tools=tools,
+  system_prompt=<span class="string">"You are a helpful research assistant."</span>
+)
+result = agent.run(<span class="string">"Research the latest trends in AI agents"</span>)</code></pre>
 
         <div class="summary-box reveal">
           <h2>Summary</h2>
